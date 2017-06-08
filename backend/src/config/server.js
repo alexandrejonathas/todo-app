@@ -6,7 +6,7 @@ server = express()
 
 server.use(bodyParser.urlencoded({extended: true}))
 server.use(bodyParser.json())
-server.user(allowCors)
+server.use(allowCors)
 
 const port = 3000
 server.listen(port, function(){
